@@ -3,18 +3,15 @@ const currentTime = document.querySelector('.curtime');
 
 const getCurrentDate = () => {
     const date = new Date();
-    const options = {
+    const specifics = {
         weekday: "long",
-        year: "numeric",
-        month: "2-digit",
-        day: "2-digit",
     };
-    return date.toLocaleDateString("en-NG", options);
+    return date.toLocaleDateString("en-NG", specifics);
 }
 
 const getCurrentTime = () => {
-    const time = new Date ();
-    return time.toLocaleTimeString();
+    const time = new Date();
+    return time.getTime();
 }
 
 const updateDateAndTime = () => {
