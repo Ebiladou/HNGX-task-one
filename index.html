@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <header class="heading">
+      <h1 class="intro">Welcome to my profile <span>shit just got real...</span></h1>
+    </header>
+
+    <section class="section-begin">
+      <div class="image">
+        <img
+          src="https://ca.slack-edge.com/T05FFAA91JP-U05R9NU7CN9-c101eb404bf8-512"
+          alt="Ladou"
+          data-testid="slackDisplayImage"
+        />
+      </div>
+    
+      <div class="info">
+        <h2 class="username" data-testid="slackUserName">Ladou</h2>
+        <p class="track" data-testid="myTrack">Frontend Track</p>
+        <p class="curdate" data-testid="currentDateOfTheWeek"></p>
+        <p class="curtime" data-testid="currentUTCTime"></p>
+        
+      </div>
+    </section>
+
+    <section class="section-end">
+      <a
+        href="https://github.com/Ebiladou/HNGX-task-one"
+        data-testid="githubURL"
+        target="_blank">GitHub Repository</a
+      >
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
