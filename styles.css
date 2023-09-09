@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-body{
+main{
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
@@ -15,13 +15,15 @@ body{
     padding: 20px 0;
 }
 
-h1{
-    text-align: center;
+h1, .track{
     margin-bottom: 7px;
+    color: rgb(219, 212, 212);
+    font-size: 18px;
 }
 
-.track{
-    margin-bottom: 7px;
+.curdate, .curtime{
+    font-size: 13px;
+    color: gray;
 }
 
 .section-begin{
@@ -45,8 +47,6 @@ h1{
 .info{
     padding: 10px 20px;
     text-align: center;
-    font-size: 16px;
-    color: white;
     line-height: 25px;
 }
 
@@ -60,5 +60,20 @@ h1{
 
 .section-end a{
     text-decoration: none;
-    color: white;
+    color: rgb(219, 212, 212);
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        width: 350px;
+    }
+
+    .image{
+        width: 170px;
+    }
+    
+    .image img{
+        width: 140px;
+        border-radius: 90px;
+    }
 }
